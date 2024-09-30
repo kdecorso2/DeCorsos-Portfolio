@@ -1,0 +1,42 @@
+*{
+
+}
+
+
+body{
+    background-color: #F4E0C5;
+    color: #49381E; 
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    
+}
+
+h1 {
+    color: #49381E;
+    font-size: 30px;
+    font-family: ;
+    padding-top: 1em;
+    padding-bottom: .75em;
+}
+
+p{
+    color: #374234;
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+a {
+    color: #08B3CB;
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+
+a:hover{
+    color: #027B8C;
+
+
+}
