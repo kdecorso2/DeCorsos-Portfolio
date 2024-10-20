@@ -1,5 +1,6 @@
-*{
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -15,7 +16,7 @@ body{
 h1 {
     color: #49381E;
     font-size: 30px;
-    font-family: ;
+    font-family: 'Times New Roman', Times, serif;
     padding-top: 1em;
     padding-bottom: .75em;
 }
@@ -38,5 +39,54 @@ a {
 a:hover{
     color: #027B8C;
 
+ #orange-cat {
+    float: right ; 
+ }
+ 
+.article-date{
+    font-size: 14px;
+    color: #374234;
+    font-weight: bold;
+ }
 
+ #newsletter-subscribe {
+    background-color: #B29A3A;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+ #newsletter-subscribe h2 {
+    color: #D9DDCE;
+    text-align: center;
+    padding-bottom: 20px;
+ }
+
+ #newsletter-subscribe input {
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 30px;
+    width: 200px;
+ }
+
+ #newsletter-subscribe button {
+    background-color: #E4C2B9;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border: 0px;
+    color: #F4E0C5;
+    border-radius: 10px;
+ }
+
+ #newsletter-subcribe form {
+    width: fit-content;
+    margin: auto;
+ }
+
+ .article-flex {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+ }
 }
