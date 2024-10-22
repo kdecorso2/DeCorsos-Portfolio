@@ -38,6 +38,7 @@ a {
 
 a:hover{
     color: #027B8C;
+}
 
  #orange-cat {
     float: right ; 
@@ -77,6 +78,7 @@ a:hover{
     border: 0px;
     color: #F4E0C5;
     border-radius: 10px;
+    
  }
 
  #newsletter-subcribe form {
@@ -84,9 +86,8 @@ a:hover{
     margin: auto;
  }
 
- .article-flex {
+.article-flex {
     display: flex;
     gap: 40px;
     justify-content: center;
  }
-}
