@@ -8,9 +8,14 @@ body{
     background-color: #F4E0C5;
     color: #49381E; 
     font-size: 18px;
+    
+    
+}
+
+main{
     width: 60%;
     margin: auto;
-    
+
 }
 
 h1 {
@@ -30,14 +35,13 @@ p{
 }
 
 a {
-    color: #08B3CB;
-    text-decoration: underline;
-    font-weight: 700;
+    color:#E4C2B9;
+    font-weight: 900px;
 
 }
 
 a:hover{
-    color: #027B8C;
+    color:#D9DDCE;
 }
 
  #orange-cat {
@@ -91,3 +95,38 @@ a:hover{
     gap: 40px;
     justify-content: center;
  }
+
+ /* main header navigation */
+
+ header nav menu li {
+    list-style: none;
+
+ }
+
+ header nav {
+    display: flex;
+    justify-content: space-around;
+ }
+
+ header nav menu#main-menu {
+    display: flex;
+    gap: 50px;
+ }
+
+ header nav menu.dropdown{
+    display: none;
+ }
+ 
+ header nav .dropdown-trigger:hover menu.dropdown {
+    display: block; 
+    position: absolute;
+    background-color: #49381E;
+ } 
+
+header {
+    padding: 50px;
+}
+ 
+nav button {
+    color: #E4C2B9;
+}
