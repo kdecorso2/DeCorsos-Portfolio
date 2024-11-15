@@ -7,46 +7,69 @@
     <link rel="stylesheet" href="assets/styles/styles.css"
 </head>
 <body>
+    <!-- Logo Section -->
     <header>
-        <nav>
-            <a class="logo" href="index.html"> <img src="assets/images/website logo.png" alt="Kristen DeCorso Logo"> </a>
-            <menu id="main-menu">
-                <li> 
-                    <a href=""> link to page </a>
-                </li>
-                <li class="dropdown-trigger">
-                    <button> dropdown label</button>
-                    <menu class="dropdown">
-                        <li> 
-                            <a href=""> Page 1</a>
-                        </li>
-                        <li>
-                            <a href=""> Page 2</a>
-                        </li>
-                        <li>
-                            <a href=""> Page 3</a>
-                        </li>
-                    </menu>
-                </li>
-            </menu>
-        </nav>
+      <img src="your-logo.png" alt="Logo" class="logo">
+      <!-- Menu Trigger -->
+      <div class="menu-trigger" id="menuTrigger">Menu</div>
     </header>
+  
+    <!-- Pop-out Menu -->
+    <div class="popout-menu" id="popoutMenu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <!-- Pink box with text and image -->
+        <div class="pink-square">
+          <div class="contact-text">
+            <h1>Contact Me</h1>
+            <p>Other words</p>
+          </div>
+          <img src="your-image.jpg" alt="Your Picture" class="contact-image">
+        </div>
+  
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <script src="scripts.js"></script>
+    // JavaScript to toggle the pop-out menu visibility
+    document.getElementById('menuTrigger').addEventListener('click', function() {
+      const menu = document.getElementById('popoutMenu');
+      
+      // Toggle the menu by changing display and sliding in/out
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        menu.style.right = '-33.33%'; // Slide it out
+      } else {
+        menu.style.display = 'block';
+        menu.style.right = '0'; // Slide it in
+      }
+    });
 
-    <main>
-        <img src=""
-
-
-
-        <section id="newsletter-subscribe">
-            <h2> Subscribe to my newsletter!</h2>
-            <form>
-                <label for="newsletter"> Enter Your Email</label><br> 
-                <input id="newsletter" type="Email" placeholder="example@email.com"><br>
-                <button> Subscribe</button>
-            </form>
-        </section>
-    </main>
-
-    
-</body>
-</html>
+  </body>
+  </html>

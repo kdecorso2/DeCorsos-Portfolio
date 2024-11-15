@@ -130,3 +130,182 @@ header {
 nav button {
     color: #E4C2B9;
 }
+
+#mobile-menu-botton{
+   display: none;
+}
+
+ 
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f9f9f9; /* Background color for the body */
+   padding-top: 60px; /* Added space for fixed header */
+ }
+ 
+ /* Header Section */
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 10px;
+   z-index: 1000;
+   background-color: white;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .logo {
+   width: 150px;
+   height: auto;
+ }
+ 
+ .menu-trigger {
+   font-size: 20px;
+   cursor: pointer;
+   color: #333;
+   padding: 10px 20px;
+   background-color: #eee;
+   border-radius: 5px;
+ }
+ 
+ .menu-trigger:hover {
+   background-color: #ddd;
+ }
+ 
+ /* Pop-out Menu */
+ .popout-menu {
+   position: fixed;
+   top: 0;
+   right: -33.33%; /* Initially off-screen */
+   width: 33.33%; /* 1/3 of the screen width */
+   height: 100%;
+   background-color: #222;
+   color: white;
+   padding: 20px;
+   display: none; /* Hidden by default */
+   transition: right 0.3s ease-in-out;
+ }
+ 
+ .popout-menu ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .popout-menu li {
+   border-bottom: 1px solid #444;
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+ }
+ 
+ .popout-menu a {
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+   display: block;
+ }
+ 
+ .popout-menu a:hover {
+   color: #ff69b4;
+ }
+ 
+ /* Main Container */
+ .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh - 60px); /* Adjusts height to avoid overlap with header */
+   padding: 20px;
+ }
+ 
+ /* Contact Section */
+ .contact-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   max-width: 1200px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Pink box with text and image */
+ .pink-square {
+   display: flex;
+   align-items: center;
+   background-color: pink;
+   padding: 20px;
+   border-radius: 8px;
+   flex: 1;
+   justify-content: space-between;
+ }
+ 
+ .contact-text h1 {
+   color: white;
+   font-size: 32px;
+   margin-bottom: 10px;
+ }
+ 
+ .contact-text p {
+   color: white;
+   font-size: 18px;
+ }
+ 
+ .contact-image {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-left: 20px;
+ }
+ 
+ /* Contact Form */
+ .contact-form {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ form label {
+   margin-bottom: 5px;
+   font-size: 16px;
+ }
+ 
+ form input, form textarea {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 16px;
+ }
+ 
+ form textarea {
+   resize: vertical;
+ }
+ 
+ /* Submit Button Styling */
+ form button {
+   padding: 10px;
+   background-color: pink;
+   border: none;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: all 0.3s ease;
+ }
+ 
+ /* Invert button colors on hover */
+ form button:hover {
+   background-color: white;
+   color: pink;
+   border: 2px solid pink;
+ }
