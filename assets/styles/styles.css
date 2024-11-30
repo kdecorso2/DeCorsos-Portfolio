@@ -207,7 +207,7 @@ body {
  }
  
  .popout-menu a:hover {
-   color: #ff69b4;
+   color: #E4C2B9;
  }
  
  /* Main Container */
@@ -236,7 +236,7 @@ body {
  .pink-square {
    display: flex;
    align-items: center;
-   background-color: pink;
+   background-color: E4C2B9;
    padding: 20px;
    border-radius: 8px;
    flex: 1;
@@ -294,7 +294,7 @@ body {
  /* Submit Button Styling */
  form button {
    padding: 10px;
-   background-color: pink;
+   background-color: E4C2B9;
    border: none;
    color: white;
    font-size: 16px;
@@ -306,6 +306,55 @@ body {
  /* Invert button colors on hover */
  form button:hover {
    background-color: white;
-   color: pink;
-   border: 2px solid pink;
+   color: E4C2B9;
+   border: 2px solid E4C2B9;
  }
+
+ body {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* 3 columns, each 200px wide */
+  grid-template-rows: repeat(3, 200px); /* 3 rows, each 200px high */
+  gap: 20px; /* 20px gap between both rows and columns */
+}
+
+/* Individual grid item styles */
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Styles for the images inside each grid item */
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the grid item */
+.grid-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the image */
+.grid-item:hover img {
+  transform: scale(1.1);
+}
