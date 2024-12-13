@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="flex-row-ca">
-        <button class="layer">
-          <div class="vector"></div>
-          <div class="group"></div>
-          <div class="group-1">
-            <div class="vector-2"></div>
-            <div class="vector-3"></div>
+</head>
+<body style="background-color: #FFFBF2;">
+    <!-- Header Section -->
+    <header style="background-color: #FFFBF2;">
+        <div class="logo">
+            <img src="assets/images/website logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- Image on the left -->
+        <div class="contact-image">
+          <img src="assets/images/image 10.png" alt="Flowers" />
+        </div>
+  
+        <!-- Form content on the right -->
+        <div class="contact-form">
+          <h2>Contact Me</h2>
+          <div class="underline"></div>
+          
+          <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+  
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+  
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background-color: #F4DFC4;">
+      <div class="footer-content">
+          <!-- Left: Navigation Links -->
+          <div class="footer-left">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="works.html">Works</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
           </div>
-        </button>
-        <div class="regroup">
-          <span class="home">Home</span><span class="about">About</span
-          ><span class="works">Works</span
-          ><span class="contact-4">Contact</span>
-        </div>
-      </div>
-      <div class="flex-row">
-        <div class="rectangle">
-          <div class="vector-5"></div>
-          <span class="contact-me">Contact me</span
-          ><span class="get-in-contact"
-            >If you have any questions, require a budget or want information
-            about a project, get in contact with me.</span
-          >
-        </div>
-        <div class="image"></div>
-        <span class="send-message">Send a message</span
-        ><span class="email">Email</span><span class="name">Name</span>
-        <div class="rectangle-6"></div>
-        <div class="rectangle-7"></div>
-        <span class="message">Message</span>
-        <div class="rectangle-8"></div>
-        <button class="rectangle-9"><span class="send">Send</span></button>
-      </div>
-      <div class="flex-row-a">
-        <div class="layer-b"><div class="vector-c"></div></div>
-        <div class="rectangle-d">
-          <span class="subscribe-newsletter">Subscribe to our newsletter</span>
-          <div class="flex-row-e">
-            <div class="rectangle-f"></div>
-            <button class="rectangle-10">
-              <span class="subscribe">Subscribe</span>
-            </button>
+
+          <!-- Center: Logo -->
+          <div class="footer-logo">
+              <img src="assets/images/website logo.png" alt="Logo" class="logo">
           </div>
-        </div>
-      </div>
-      <div class="layer-11"><div class="vector-12"></div></div>
-      <div class="rectangle-13">
-        <div class="flex-row-ce">
-          <div class="layer-14">
-            <div class="vector-15"></div>
-            <div class="group-16"></div>
-            <div class="group-17">
-              <div class="vector-18"></div>
-              <div class="vector-19"></div>
-            </div>
+
+          <!-- Right: Social Media Links -->
+          <div class="footer-right">
+            <h2 class="stay-connected">Stay Connected</h2>
+              <ul>
+                  <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                  <li><a href="mailto:email@example.com">Email</a></li>
+                  <li><a href="https://pinterest.com" target="_blank">Pinterest</a></li>
+              </ul>
           </div>
-          <span class="stay-connected">Stay Connected</span
-          ><span class="home-1a">Home</span><span class="works-1b">Works</span
-          ><span class="social-links"
-            >Instagram<br />Pinterest<br />Email Us</span
-          ><span class="about-1c">About</span
-          ><span class="contact-1d">Contact</span><span class="blog">Blog</span>
-        </div>
-        <span class="copyright-policy"
-          >Copyright 2023 All Rights Reserved • Privacy Policy</span
-        >
       </div>
-      <div class="inalare-box"></div>
-    </div>
-    
-  </body>
+  </footer>
+</body>
 </html>
+
