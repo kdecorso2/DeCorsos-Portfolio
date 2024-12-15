@@ -159,7 +159,7 @@ button:hover {
 }
 
 /* Flexbox for content layout */
-.content {
+.profilecontent {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -319,47 +319,38 @@ footer {
 }
 
 .underline {
-  width: 50%;
+  width: 50%; 
   height: 2px;
   background-color: #b29a3a;  /* Underline color */
   margin: 20px auto 0;  /* Center it and add space below */
 }
 
-/* Works Gallery Setup */
-.works-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);  
-  gap: 50px;  /* Space between images */
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
+/*Display for Works*/
+#Inalare div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.image-item {
-  /* Set each image container to be rectangular */
-  width: 100%;  /* Full width of the parent container */
-  height: 0;
-  padding-bottom: 56.25%;  /* Aspect ratio of 16:9 (Height is 56.25% of width) */
-  position: relative;
-  overflow: hidden;  /* Prevent images from overflowing the container */
+#InTheFields div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.image-item img {
-  /* Ensure the image fills the rectangular container */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Ensures the image covers the container without stretching */
-  transition: transform 0.3s ease-in-out;
+#Misc div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Hover effect to zoom images */
 .image-item img:hover {
   transform: scale(1.1);  /* Zoom effect */
 }
-
 
 
 /* Responsive Design */

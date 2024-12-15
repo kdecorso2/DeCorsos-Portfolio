@@ -3,102 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>About</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
-<body>
-   <header> 
+<body style="background-color: #FFFBF2;">
+    <!-- Header Section -->
+    <header style="background-color: #FFFBF2;">
+        <div class="logo">
+            <img src="assets/images/website logo.png" alt="Logo">
+        </div>
         <nav>
-
-            <button id="mobile-menu-botton">
-                <img src="assets/images/menu-alt-svgrepo-com.svg" width="50px">
-                <br>
-                <span>Menu</span>
-            </button>
-           
-            <a class="logo" href="index.html"> <img src="assets/images/website logo.png" alt="Kristen DeCorso Logo"> </a>
-            <menu id="main-menu">
-                <li> 
-                    <a href=""> link to page </a>
-                </li>
-                <li class="dropdown-trigger">
-                    <button> dropdown label</button>
-                    <menu class="dropdown">
-                        <li> 
-                            <a href=""> Page 1</a>
-                        </li>
-                        <li>
-                            <a href=""> Page 2</a>
-                        </li>
-                        <li>
-                            <a href=""> Page 3</a>
-                        </li>
-                    </menu>
-                </li>
-            </menu>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <h1>Showcasing Creativity: A Deep Dive into Modern Graphic Designer Portfolios</h1>
-            <p>Today's digital age, a graphic designer's online portfolio is more than just a collection of past work—it's a dynamic showcase of creativity, skill, and personal brand. Crafting an impressive portfolio requires a strategic blend of design flair and user experience principles. Here’s a guide to understanding what makes a standout graphic designer portfolio and how to navigate one effectively.</p>
-           <h3> Table of Contents</h3>
-            <ol> <li>Introduction
-               <li>Design Elements of a Successful Portfolio </li>
-               <li>Key Sections to Include</li>
-               <li>Features and User Experience </li>
-                <li>Conclusion </li> </ol>
-            <h2> Introduction</h2>
-                <p> A graphic designer’s portfolio serves as both a visual resume and a personal brand statement. It should highlight not only their technical skills but also their ability to convey a unique creative vision. An effective portfolio can make the difference between landing a client or job and missing out.</p>
-            <img id="orange-cat" src="assets/images/studio imagestudio image.png" alt="a graphics studio image">
-                <aside> 
-                <h2> Showcasing Creativity:</h2>
-                <p> A Deep Dive into Modern Graphic Designer Portfolios
-                    In today’s digital age, a graphic designer's online portfolio is more than just a collection of past work—it's a dynamic showcase of creativity, skill, and personal brand. Crafting an impressive portfolio requires a strategic blend of design flair and user experience principles. Here’s a guide to understanding what makes a standout graphic designer portfolio and how to navigate one effectively.</p>
-                <h2> Design Elements of a Successful Portfolio</h2>
-                <h1> Visual Appeal </h1>
-                <p> The first thing visitors notice is the design itself. A well-designed portfolio should reflect the designer’s own aesthetic and expertise. It should be visually engaging, with a consistent color scheme, typography, and layout that speak to their design sensibilities.</p>
-                <h1> Clarity and Simplicity </h1>
-                <p> While visual appeal is crucial, clarity cannot be overlooked. The portfolio should be easy to navigate, with intuitive menus and clear calls to action. Overcomplicating the design can distract from the actual work being showcased.</p>
-                <h1> Mobile Responsiveness </h1>
-                <p> With more people browsing on mobile devices, ensuring your portfolio is responsive is essential. This means the design should adapt seamlessly to different screen sizes, maintaining usability and visual integrity.</p>
-            </aside>
-        </article>
-        <section id="newsletter-subscribe">
-            <h2> Subscribe to my newsletter!</h2>
-            <form>
-                <label for="newsletter"> Enter Your Email</label><br> 
-                <input id="newsletter" type="Email" placeholder="example@email.com"><br>
-                <button> Subscribe</button>
-            </form>
-        </section>
-        <section>
-            <h2> Related Articles</h2>
-            <div class="article-flex"> 
-            <article> 
-                <a href="">
-                    <img src="assets/images/how to portfolio photo.png"><br>
-                    <h3>How To: Design A Stand Out Portfolio</h3>
-                    <span class="article-date"> October 3rd 2024</span>
-                </a>
-            </article>
-            <article> 
-                <a href="">
-                    <img src="assets/images/how to portfolio photo.png"><br>
-                    <h3>How To: Design A Stand Out Portfolio</h3>
-                    <span class="article-date"> Novemeber 3rd 2024</span>
-                </a>
-            </article>
-            <article> 
-                <a href="">
-                    <img src="assets/images/how to portfolio photo.png"><br>
-                    <h3>How To: Design A Stand Out Portfolio</h3>
-                    <span class="article-date"> December 3rd 2024</span>
-                </a>
-            </article>
-            </div>
-        </section>
 
-    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #F4DFC4;">
+        <div class="footer-content">
+            <!-- Left: Navigation Links -->
+            <div class="footer-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="footer-logo">
+                <img src="assets/images/website logo.png" alt="Logo" class="logo">
+            </div>
+
+            <!-- Right: Social Media Links -->
+            <div class="footer-right">
+              <h2 class="stay-connected">Stay Connected</h2>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:email@example.com">Email</a></li>
+                    <li><a href="https://pinterest.com" target="_blank">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+   
