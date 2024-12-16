@@ -1,23 +1,18 @@
-/* Main Content Styling */
-main {
-  flex-grow: 1; /* Allow main to take up remaining space */
-  padding: 20px;
-  min-height: 60vh;  /* Ensure the main section has at least 60% of the viewport height */
-}
+
 
 /* Body Setup */
 body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* Ensure body takes up full height of the viewport */
+  min-height: 100vh; 
 }
 
-/* Flexbox for Content */
+/* Flexbox for Content on about page */
 .content {
   display: flex;
-  justify-content: space-between; /* Space between text and image */
-  align-items: center; /* Vertically center the items */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .text {
@@ -51,9 +46,9 @@ header {
 
 /* Logo Styling */
 header .logo img {
-  width: 225px; /* Bigger logo size */
+  width: 225px; 
   height: 225px;
-  border-radius: 50%; /* Circular logo */
+  border-radius: 50%; 
 }
 
 /* Navigation Styling */
@@ -155,44 +150,11 @@ button {
 }
 
 button:hover {
-  background-color: #f8f8f8;
+  background-color: #D9DDCE;
 }
 
-/* Flexbox for content layout */
-.profilecontent {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
 
-/* Style the name text */
-h2 {
-  font-size: 2.5rem;
-  margin-right: 20px;
-}
 
-/* Style the image */
-.profile-image {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
-  margin-left: auto;
-}
-
-.manifesto-heading {
-  font-size: 1.5rem;
-  text-decoration: underline;
-  margin-top: 30px;
-  text-align: right;
-}
-
-.image-description {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  text-align: right;
-  color: #333;
-}
 
 /* Overall Footer Container */
 footer {
@@ -200,7 +162,7 @@ footer {
   color: white;
   padding: 30px 0;
   position: relative;
-  flex-shrink: 0;  /* Prevent footer from shrinking */
+  flex-shrink: 0;  
 }
 
 /* Footer Content Flex Container */
@@ -309,11 +271,11 @@ footer {
 .works-title-container {
   position: relative;
   text-align: center;
-  margin: 100px 0;  /* Add space above and below the title */
+  margin: 100px 0;  
 }
 
 .works-title {
-  font-size: 3rem;  /* Large title size */
+  font-size: 3rem;  
   font-weight: bold;
   color: #333;
 }
@@ -321,8 +283,8 @@ footer {
 .underline {
   width: 50%; 
   height: 2px;
-  background-color: #b29a3a;  /* Underline color */
-  margin: 20px auto 0;  /* Center it and add space below */
+  background-color: #b29a3a;  
+  margin: 20px auto 0;  
 }
 
 /*Display for Works*/
@@ -347,10 +309,6 @@ footer {
   justify-content: center;
 }
 
-/* Hover effect to zoom images */
-.image-item img:hover {
-  transform: scale(1.1);  /* Zoom effect */
-}
 
 
 /* Responsive Design */
@@ -366,7 +324,401 @@ footer {
   }
 }
 
+.homepageaboutbutton {
+  padding: 10px 20px;
+  background-color: #D9DDCE; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homepageaboutbutton:hover {
+  background-color: #E4C2B9; 
+}
+
+.homepagecontactbutton {
+  padding: 10px 20px;
+  background-color: #E4C2B9; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homepageaboutbutton:hover {
+  background-color: #D9DDCE; 
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+/* Home Content Section */
+.homecontenct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.name {
+  flex: 1;
+}
+
+.name h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.drawnface img {
+  width: 100%; 
+  max-width: 200px; 
+  height: auto; 
+}
+
+.mirrorpic {
+  flex: 1;
+  text-align: right;
+}
+
+.mirrorpic img {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Manifesto Section */
+.manifesto {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.manifestowriting {
+  text-align: center;
+  max-width: 800px;
+}
+
+.manifestowriting h2 {
+  font-size: 28px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.manifestowriting p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Quote Section */
+.quote {
+  text-align: center;
+}
+
+.quote .henri p {
+  font-size: 18px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Green Rectangle Section */
+.rectangle {
+  background-color: #b29a3a;
+  padding: 40px 0;
+}
+
+.greenrectangle {
+  width: 100%;
+  text-align: center;
+}
+
+.greenrectangle h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.greenrectangle img {
+  max-width: 48%;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Meet Kristen Section */
+.jump.to.about {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  text-align: center; 
+}
+
+.meet.kristen {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.meet.kristen img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  max-width: 400px; 
+}
+
+.text-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px; 
+}
+
+.homepageaboutbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b29a3a;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.homepageaboutbutton:hover {
+  background-color: #E4C2B9;
+}
 
 
+
+/* Jump to Contact Section */
+.jump.to.contact {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+}
+
+.brown-rectangle {
+  background-color: #D9DDCE; 
+  width: 100%; 
+  padding: 20px 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.contact.kristen {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 20px; 
+  max-width: 800px; 
+  text-align: left; 
+}
+
+.contact.kristen img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.homepagecontactbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E4C2B9; 
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 20px; 
+}
+
+.homepagecontactbutton:hover {
+  background-color: #b29a3a; 
+}
+
+/* Newsletter Subscribe Section */
+.newsletter-subscribe {
+  background-color: #E4C2B9; 
+  padding: 40px 0; 
+  text-align: center; 
+}
+
+.newsletter-subscribe .subscribe-text {
+  margin-bottom: 30px; 
+}
+
+.newsletter-subscribe h2 {
+  font-size: 32px;
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+.newsletter-subscribe p {
+  font-size: 18px;
+  color: #665; 
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between input and button */
+}
+
+.subscribe-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #b29a3a; /* Green button */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #49381E;
+}
+
+/* Container for Blog Section */
+.blogcontainer {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Blog Content Styling */
+.blogcontent {
+  background-color: #D9DDCE;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.blogcontent h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blogcontent p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px; 
+}
+
+
+.text-section {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+
+.image-section {
+  flex: 0 0 40%; 
+}
+
+.blogimage {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .image-section {
+      flex: 0 0 100%; 
+      margin-top: 20px; 
+  }
+}
+
+/* Style for news items */
+.bottom-news {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px; 
+  z-index: 10;
+}
+
+
+/* News items styling */
+.news-item {
+  text-align: center;
+  margin: 0 10px; 
+  width: 30%; 
+}
+
+.news-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 5px; 
+}
+
+.news-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Optional: Hover effect for news links */
+.news-item a:hover p {
+  color: #007bff;
+  text-decoration: underline;
+}
 
 
